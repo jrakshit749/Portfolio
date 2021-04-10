@@ -131,17 +131,23 @@ a{
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .5s ease;
+    transition: .3s ease-in-out;
   }
 
   .skills:hover .overlay, .projects:hover .overlay, .certifications:hover .overlay{
     height: 100%;
+
+  }
+  .skills:hover .badge, .projects:hover .badge, .certifications:hover .badge{
+    filter:blur(3px) grayscale(1);
+
   }
 
   .text {
     color: rgba(255, 255, 255, 1);
+    font-weight:700;
     opacity:1;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -168,8 +174,11 @@ a{
 
 .skills:hover, .projects:hover, .certifications:hover{
     filter: drop-shadow(5px 0px 20px #a8a8a8);
-
 }
+
+.skills:hover{filter:drop-shadow(0px 0px 15px #deaaff);}
+.projects:hover{filter:drop-shadow(0px 0px 15px #ffc6ff);}
+.certifications:hover{filter:drop-shadow(0px 0px 15px #caf0f8);}
 
 /*-----------------------------------------------Third Page---------------------------------------------------------------*/
 
@@ -184,22 +193,49 @@ a{
     margin-top: 2.5%;
     margin-left:2.5%;
     position: absolute;
+
+}
+
+.assigner{
+    position: absolute;
+    display:flex;
+    width: 100%;
+    height:15vh;
+    margin-top: 10%;
+}
+
+.assigner-box{
+    background:rgba(0,0,0,0.05);
+    border-radius: 10px;
+    position: absolute;
+    display:flex;
+    padding: 4% 1%;
+    width: 50%;
+    height:15vh;
+    justify-content:center;
+    align-items: center;
+    transform: translateX(50%);
+    filter:drop-shadow(0 0 20px rgb(204, 204, 204));
+}
+
+.assigner-box:hover{
+    filter:drop-shadow(0 0 10px rgba(187, 187, 187, 0.5));
+
+}
+.assigner-box:hover .assigner-image img{
+    filter: hue-rotate(90deg)
+
 }
 
 .assigner-img{
     width: 100%;
     display:flex;
-    align-items: center;
-    justify-content:center
 }
 
 .assigner-image img{
-    /* height:20%; */
-    width: 50%;
-    position: absolute;
-    margin-top: 10%;
-    background:peachpuff;
-
+    padding:5px;
+    width: 100%;
+    filter: hue-rotate(0deg)
 }
 
 }
