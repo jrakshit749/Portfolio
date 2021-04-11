@@ -202,8 +202,8 @@ a{
     width: 100%;
     height:15vh;
     margin-top: 10%;
-    filter:drop-shadow(0 0 20px rgb(204, 204, 204));
-
+    /* filter:drop-shadow(0 0 20px rgb(204, 204, 204)); */
+    
 }
 
 .assigner-box{
@@ -217,11 +217,13 @@ a{
     justify-content:center;
     align-items: center;
     transform: translateX(50%);
-    filter:drop-shadow(0px 0px 20px rgb(247, 247, 247));
+    /* filter:drop-shadow(0px 0px 20px rgb(247, 247, 247)); */
+    border:3px solid black;
+    transition:0.075s ease-in-out;
 }
 
 .assigner-box:hover{
-    filter:drop-shadow(0 0 10px rgba(187, 187, 187, 0.5));
+    border:0px solid black;
 
 }
 .assigner-box:hover .assigner-image img{
@@ -251,23 +253,23 @@ a{
 .var1{
     background:white;
     width:30%;
-    filter:drop-shadow(0px 0px 20px rgb(204, 204, 204));
+    /* filter:drop-shadow(0px 0px 20px rgb(204, 204, 204)); */
     border-radius: 10px;
     height: 10vh;
     margin-top: 350px;
-    margin-left: 7.5%;
+    margin-left: 15%;
     position:absolute;
     display: grid;
     place-items: center;
+    border:3px solid black;
+    transition:0.075s ease-in-out;
 }
 
 .var1:hover{
-    filter:drop-shadow(0px 0px 10px rgb(174, 174, 174)) hue-rotate(90deg);
-
+    border:0px solid black;
 }
 
  .var1 .email{
-    /* filter:drop-shadow(0 0 20px rgb(204, 204, 204)); */
     display:flex;
     justify-content:space-evenly ;
 }
@@ -275,7 +277,6 @@ a{
     width:70%;
 }
 .var1 .email .email-icon{
-    /* width:10px; */
     display:grid;
     place-items: center;
     border-radius: 10px;
@@ -286,33 +287,229 @@ a{
 }
  .var1 .email .email-box .email-img img{
     width:100%;
-    position:relative;
 }
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
-.contents .var2 .cv{
+
+.var2{
+    background:white;
+    width:15%;
+    /* filter:drop-shadow(0px 0px 20px rgb(204, 204, 204)); */
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 350px;
+    margin-left: 70%;
     position:absolute;
-    margin-top: 30%;
-    margin-left:70%;
-    display:grid; 
+    display: grid;
+    place-items: center;
+    border:3px solid black;
+    transition:0.075s ease-in-out;
+}
+
+.var2:hover{
+    border:0px solid black;
+}
+
+ .var2 .cv{
+    display:flex;
+    justify-content:space-evenly ;
+}
+
+.cv-box{
+    width: 70%;
+    display: grid;
     place-items: center;
 }
-.contents .var2 .cv .cv-box{
-    display:grid; 
+
+.cv-icon{
+    display:grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.cv-img{
+    display:grid;
+    place-items: center;
+}
+
+.var2 .cv .cv-box .cv-img img{
+    width:50%;
+}
+.cv-icon img{
+    width: 50%;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+.var3{
+    background:white;
+    width:15%;
+    /* filter:drop-shadow(0px 0px 20px rgb(204, 204, 204)); */
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 500px;
+    margin-left: 15%;
+    position:absolute;
+    display: grid;
+    place-items: center;
+    border:3px solid black;
+    transition:0.075s ease-in-out;
     
+}
+
+.var3:hover{
+    border:0px solid black;
+}
+
+.insta{
+    display:flex;
+    justify-content:space-evenly ;
+
+}
+.insta-box{
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+}
+ .insta-icon{
+    display:grid;
+    place-items: center;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: 0.075s ease-in-out;
+}
+
+.var3:hover .insta-icon{
+    filter: grayscale(0%);
 
 }
 
-.contents .var2 .cv .cv-box .cv-img{
-    height:auto;
+.insta-img{
+    display:grid;
+    place-items: center;
+    width: 50%;
+}
+.var3 .insta .insta-box .insta-img img{width:150%;}
+.insta-icon img{width:70%;}
+
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+.var4{
+    background:white;
+    width:15%;
+    /* filter:drop-shadow(0px 0px 20px rgb(204, 204, 204)); */
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 500px;
+    margin-left: 40%;
+    position:absolute;
+    display: grid;
+    place-items: center;
+    border:3px solid black;
+    transition:0.075s ease-in-out;
+}
+
+.var4:hover{
+    border:0px solid black;
+}
+
+.git{
+    display:flex;
+    justify-content:space-evenly ;
+}
+.git-box{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.git-icon{
+    display:grid;
+    place-items: center;
+    border-radius: 10px;
+    filter: contrast(0%);
+    transition: 0.075s ease-in-out;
+}
+
+.var4:hover .git-icon{
+    filter: contrast(100%);
+}
+
+.git-img{
+    display:grid;
+    place-items: center;
+    width: 50%;
+}
+.var4 .git .git-box .git-img img{width:150%;}
+.git-icon img{width:73%;}
+
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+
+.var5{
+    background:white;
+    width:25%;
+    /* filter:drop-shadow(0px 0px 20px rgb(204, 204, 204)); */
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 500px;
+    margin-left: 60%;
+    position:absolute;
+    display: grid;
+    place-items: center;
+    border:3px solid black;
+    transition:0.075s ease-in-out;
+}
+
+.var5:hover{
+    border:0px solid black;
+}
+
+.tweet-in{
+    display:flex;
+    justify-content:space-evenly ;
+}
+.tweet-in-box{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.tweet-in-icon{
+    display:grid;
+    place-items: center;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: 0.075s ease-in-out;
+}
+
+.var5:hover .tweet-in-icon:hover{
+    filter: grayscale(0%);
+}
+
+.tweet-in-img{
+    display:grid;
+    place-items: center;
+    width: 60%;
+}
+.var5 .tweet-in .tweet-in-box .tweet-in-img img{
     width:100%;
-    background:red;
 }
-
-.contents .var2 .cv .cv-box .cv-img img{
-}
+.tweet-in-icon img{width:82.5%;}
 
 }
 
