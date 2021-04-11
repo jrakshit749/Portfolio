@@ -202,10 +202,12 @@ a{
     width: 100%;
     height:15vh;
     margin-top: 10%;
+    filter:drop-shadow(0 0 20px rgb(204, 204, 204));
+
 }
 
 .assigner-box{
-    background:rgba(0,0,0,0.05);
+    background:white;
     border-radius: 10px;
     position: absolute;
     display:flex;
@@ -215,7 +217,7 @@ a{
     justify-content:center;
     align-items: center;
     transform: translateX(50%);
-    filter:drop-shadow(0 0 20px rgb(204, 204, 204));
+    filter:drop-shadow(0px 0px 20px rgb(247, 247, 247));
 }
 
 .assigner-box:hover{
@@ -236,6 +238,80 @@ a{
     padding:5px;
     width: 100%;
     filter: hue-rotate(0deg)
+}
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+.contents{
+    display:grid;
+}
+
+.var1{
+    background:white;
+    width:30%;
+    filter:drop-shadow(0px 0px 20px rgb(204, 204, 204));
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 350px;
+    margin-left: 7.5%;
+    position:absolute;
+    display: grid;
+    place-items: center;
+}
+
+.var1:hover{
+    filter:drop-shadow(0px 0px 10px rgb(174, 174, 174)) hue-rotate(90deg);
+
+}
+
+ .var1 .email{
+    /* filter:drop-shadow(0 0 20px rgb(204, 204, 204)); */
+    display:flex;
+    justify-content:space-evenly ;
+}
+.var1 .email .email-box{
+    width:70%;
+}
+.var1 .email .email-icon{
+    /* width:10px; */
+    display:grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.email-icon img{
+    width:50%;
+}
+ .var1 .email .email-box .email-img img{
+    width:100%;
+    position:relative;
+}
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+.contents .var2 .cv{
+    position:absolute;
+    margin-top: 30%;
+    margin-left:70%;
+    display:grid; 
+    place-items: center;
+}
+.contents .var2 .cv .cv-box{
+    display:grid; 
+    
+
+}
+
+.contents .var2 .cv .cv-box .cv-img{
+    height:auto;
+    width:100%;
+    background:red;
+}
+
+.contents .var2 .cv .cv-box .cv-img img{
 }
 
 }
