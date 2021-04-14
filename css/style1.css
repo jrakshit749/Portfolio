@@ -32,6 +32,66 @@ body{
     font-size:1rem;
     scroll-snap-type: y proximity;
 }
+/*-------------------------------------------Nav Bar--------------------------------------------------------------------*/
+
+
+
+.navbar {
+    padding-top: 1vh;
+    width:100vw;
+    position:fixed;
+    z-index:100;
+    /* background:rgba(0,0,0,.05); */
+    display:inline-block;
+    justify-content:space-between;
+    align-items: right;
+    padding-right: 1vw;;
+}
+/* 
+.nav-area{
+    float:right;
+} */
+
+.navbar-left{
+    align-items:left;
+    float:left;
+    /* padding-left: 1vw;; */
+    margin-left: 0.5vw;
+    border-radius: 7.5px;
+}
+
+.navbar-left {display:grid; place-items: center;}
+
+.navbar-left li a img{
+    border-radius:7.5px;
+}
+
+.navbar-left:hover{
+    background:rgba(0,0,0,0.2)
+}
+
+
+.navbar-right{
+    float:right;
+}
+
+
+.nav-area .navbar-right li{
+    padding:0%;
+    display:inline-block;
+    border:2px solid black;
+    border-radius:12px;
+    transition:0.075s ease-in-out;
+}
+
+
+.nav-area li:hover{
+    border:0px solid black;
+    /* background-color:rgba(0, 0, 0, 0.05); */
+    border-radius: 12px;
+    filter:hue-rotate(180deg);
+}
+
 /*-------------------------------------------First Page-----------------------------------------------------------------*/
 .first-page{
   height:100vh;
@@ -102,7 +162,7 @@ a{
 } */
 
 .left, .right, .middle{
-    background:#c8c8c8;
+    /* background:#c8c8c8; */
     width:33vw;
     height:100vh;
     display:grid;
@@ -113,7 +173,7 @@ a{
     /* transition-delay: 1s; */
 }
 .middle{
-    background:peachpuff;
+    /* background:peachpuff; */
 }
 
 /* .card{
@@ -262,8 +322,8 @@ a{
 
 .header-text{
     font-size: 3rem;
-    margin-top: 2.5%;
-    margin-left:2.5%;
+    margin-top: 3%;
+    margin-left:5%;
     position: absolute;
 
 }
@@ -330,7 +390,7 @@ a{
     height: 10vh;
     margin-top: max(425px, 50vh);
     margin-left: 15%;
-    position:relative;
+    position:absolute;
     display: grid;
     place-items: center;
     border:3px solid black;
@@ -347,6 +407,8 @@ a{
 }
 .var1 .email .email-box{
     width:70%;
+    display: grid;
+    place-items: center;
 }
 .var1 .email .email-icon{
     display:grid;
@@ -360,9 +422,6 @@ a{
  .var1 .email .email-box .email-img img{
     width:100%;
 }
-/*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 
 .var2{
