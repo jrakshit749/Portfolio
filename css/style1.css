@@ -67,7 +67,7 @@ body{
 }
 
 .navbar-left:hover{
-    background:rgba(0,0,0,0.2)
+    background:rgba(0,0,0,0.2);
 }
 
 
@@ -79,14 +79,15 @@ body{
 .nav-area .navbar-right li{
     padding:0%;
     display:inline-block;
-    border:2px solid black;
+    border:0px solid black;
     border-radius:12px;
     transition:0.075s ease-in-out;
 }
 
 
-.nav-area li:hover{
-    border:0px solid black;
+.nav-area .navbar-right li:hover{
+    border:1px solid black;
+    padding: 0 5px;
     /* background-color:rgba(0, 0, 0, 0.05); */
     border-radius: 12px;
     filter:hue-rotate(180deg);
