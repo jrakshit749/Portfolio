@@ -7,5 +7,5 @@ This portfolio is presented in a minimal fashion where I learn web dev and impro
 ## Some of my skills include:
 
 - I am an artist
-- I have specialization in Applied Cryptography
+- I possess expertise in the field of Applied Cryptography provided by a platform aka Coursera
 - Keen about Blockchain
